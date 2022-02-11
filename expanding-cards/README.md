@@ -1,1 +1,1 @@
- <img src="images/expanding.jpg" />
+![expanding]<img src="images/expanding.jpg" />
