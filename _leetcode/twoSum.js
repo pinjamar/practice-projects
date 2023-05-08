@@ -53,7 +53,7 @@ var twoSum = function (nums, target) {
   return v;
 };
 
-//ALTERNATIVE SOLUTION
+//ALTERNATIVE SOLUTION!!!
 /**
 //  * @param {number[]} nums
 //  * @param {number} target
