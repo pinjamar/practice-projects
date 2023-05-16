@@ -10,3 +10,19 @@
 // Output: 5
 // Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
 // Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+const maxProfit = (prices) => {
+  let left = 0; // Buy
+  let right = 1; // sell
+  let max_profit = 0;
+  while (right < prices.length) {
+    if (prices[left] < prices[right]) {
+      let profit = prices[right] - prices[left]; // our current profit
+
+      max_profit = Math.max(max_profit, profit);
+    } else {
+      left = right;
+    }
+    right++;
+  }
+  return max_profit;
+};
