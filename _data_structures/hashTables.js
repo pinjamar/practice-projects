@@ -1,3 +1,10 @@
+// HASH TABLES IN RUBY
+// MAPS IN JAVA
+// DICTIONARIES IN PYTHON
+// OBJECTS IN JAVASCRIPT
+// https://en.wikipedia.org/wiki/Hash_table
+// https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)#JavaScript
+
 let user = {
   age: 54,
   name: 'Kyle',
