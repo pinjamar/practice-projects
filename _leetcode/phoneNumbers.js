@@ -17,6 +17,7 @@
  */
 
 var convertNumber = function (inputNumber) {
+  var inputNumber = '1800-THRIFTY';
   const symbols = {
     A: 2,
     B: 2,
@@ -65,8 +66,11 @@ var convertNumber = function (inputNumber) {
     ) {
       numerical.push(kopija[i]);
     } else {
-      numerical.push(kopija[symbols[i]]);
+      numerical.push(symbols[kopija[i]]);
     }
   }
+
   return numerical.join('');
 };
+
+console.log(convertNumber());
