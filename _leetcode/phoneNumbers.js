@@ -74,3 +74,67 @@ var convertNumber = function (inputNumber) {
 };
 
 console.log(convertNumber());
+
+/**
+ * Given a string of characters, return a combination of tapped numbers to write
+ * the message on your phone using the Phone Pad
+ *
+ *   1   2   3
+ *      ABC DEF
+ *   4   5   6
+ *  GHI JKL MNO
+ *   7   8   9
+ * PQRS TUV WXYZ
+ *   *   0   #
+ *       _
+ *
+ * example: hi mate - 44 _444 0 6 2 8 33
+ *                     h    i _ m a t  e
+ *
+ */
+/**
+ * @param {string} broj
+ * @return {number}
+ */
+var broj = 'hi mate';
+
+var convert = function (broj) {
+  const keypad = {
+    a: 2,
+    b: 22,
+    c: 222,
+    d: 3,
+    e: 33,
+    f: 333,
+    g: 4,
+    h: 44,
+    i: 444,
+    j: 5,
+    k: 55,
+    l: 555,
+    m: 6,
+    n: 66,
+    o: 666,
+    p: 7,
+    q: 77,
+    r: 777,
+    s: 777,
+    t: 8,
+    u: 88,
+    v: 888,
+    w: 9,
+    x: 99,
+    y: 999,
+    z: 9999,
+    ' ': 0,
+  };
+  let kopi = [...broj];
+  let prijevod = [];
+
+  for (let i = 0; i < kopi.length; i++) {
+    prijevod.push(keypad[kopi[i]]);
+  }
+  return prijevod.join('');
+};
+
+console.log(convert(broj));
